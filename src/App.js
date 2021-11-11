@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import styles from './assets/scss/styles.module.scss';
+import './globals.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import favicon from './assets/images/favicon.png';
+import home from './assets/images/home.png';
+
+export default () => {
+  return(
+    <div className={styles.container}>
+      <nav>
+        <div className={styles.logo}>
+          <img src={favicon} />
+          <span>Plantex</span>
+        </div>
+
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Products</li>
+          <li>FAQs</li>
+          <li>Contact Us</li>
+        </ul>
+      </nav>
+
+      <section className={styles.banner}>
+        <img src={home} className={styles.homeImg} />
+
+        <div className={styles.textArea}>
+          <h1>Tempor orci dapibus in iaculis nunc sed truli</h1>
+          <p>Purus in mollis nunc sed id semper risus in hendrerit gravida rutrum quisque non tellus orci ac auctor augue mauris augue neque gravida</p>
+          <div className={styles.button}>
+            <span>Explore</span>
+          </div>
+        </div>
+      </section>
     </div>
-  );
+  )
 }
-
-export default App;
