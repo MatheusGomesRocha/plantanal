@@ -38,12 +38,47 @@
 
     .banner {
         display: flex;
+        align-items: center;
         width: 100%;
         margin-top: 4rem;
 
+        .social {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 1.2rem;
+
+            .text {
+                transform: rotate(90deg);
+                margin-top: 3rem;
+                width: 100px;
+
+                span {
+                    color: var(--title);
+                    font-weight: 600;
+                    text-align: center;
+                }
+            }
+
+            .line {
+                background-color: var(--title);
+                width: .1rem;
+                height: 2rem;
+                margin: 1.5rem 0 1rem 0;
+            }
+
+            .socialIcons {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
         .homeImg {
-            width: 300px;
-            height: 300px;
+            width: 18.5rem;
+            height: 18.5rem;
+            margin-left: 3rem;
         }
 
         .textArea {
@@ -72,7 +107,8 @@
 
                 span {
                     color: var(--container);
-                    font-size: 1.2rem;
+                    font-size: 1.1rem;
+                    margin-right: .5rem;
                 }
             }
         }
