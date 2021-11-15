@@ -3,12 +3,14 @@ import styles from './assets/scss/styles.module.scss';
 import './globals.scss';
 
 import favicon from './assets/images/favicon.png';
-import home from './assets/images/home.png';
+import homeImg from './assets/images/home.png';
+import aboutImg from './assets/images/about.png';
 
 import { BsArrowRightShort } from 'react-icons/bs';
 import { AiOutlineInstagram } from 'react-icons/ai';
 import { TiSocialFacebook } from 'react-icons/ti';
 import { FaLinkedinIn } from 'react-icons/fa';
+import { BiCheck } from 'react-icons/bi';
 
 export default () => {
   return(
@@ -29,7 +31,6 @@ export default () => {
       </nav>
 
       <section className={styles.banner}>
-
         <div className={styles.social}>
           <div className={styles.text}>
             <span>Follow Us</span>
@@ -42,7 +43,7 @@ export default () => {
           </div>
         </div>
 
-        <img src={home} className={styles.homeImg} />
+        <img src={homeImg} className={styles.homeImg} />
 
         <div className={styles.textArea}>
           <h1>Tempor orci dapibus in iaculis nunc sed truli</h1>
@@ -52,6 +53,43 @@ export default () => {
             <BsArrowRightShort size={25} color="#fff" />
           </div>
         </div>
+      </section>
+
+      <section className={styles.about}>
+        <div className={styles.textArea}>
+          <h1>Tempor orci dapibus in iaculis nunc sed truli</h1>
+          <p>Purus in mollis nunc sed id semper risus in hendrerit gravida rutrum quisque non tellus orci ac auctor augue mauris augue neque gravida</p>
+
+          <div className={styles.checkArea}>
+            <div className={styles.checkItem}>
+              <div>
+                <BiCheck size={25} color="#fff" />
+              </div>
+              <span>Posuere ac ut consequat</span>
+            </div>
+
+            <div className={styles.checkItem}>
+              <div>
+                <BiCheck size={25} color="#fff" />
+              </div>
+              <span>Posuere ac ut consequat</span>
+            </div>
+            
+            <div className={styles.checkItem}>
+              <div>
+                <BiCheck size={25} color="#fff" />
+              </div>
+              <span>Posuere ac ut consequat</span>
+            </div>
+          </div>
+
+          <div className={styles.shopButton}>
+            <span>Shop now</span>
+            <BsArrowRightShort size={25} color="#3e6553" />
+          </div>
+        </div>
+
+        <img src={aboutImg} />
       </section>
     </div>
   )

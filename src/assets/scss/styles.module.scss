@@ -125,4 +125,68 @@
             }
         }
     }
+
+    .about {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 6rem;
+
+        .textArea {
+            width: 50%;
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                color: var(--text-light);
+                font-size: 1.1rem;
+                margin-top: .5rem;
+            }
+
+            .checkArea {
+                .checkItem {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-top: 1rem;
+
+                    div {
+                        background-color: var(--first-color);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 2rem;
+                        height: 2rem;
+                        border-radius: .5rem;
+                    }
+
+                    span {
+                        font-weight: 600;
+                        margin-left: 1rem;
+                    }
+                }
+            }
+
+            .shopButton {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-top: 1.5rem;
+
+                span {
+                    font-weight: 600;
+                    font-size: 1.3rem;
+                    margin-right: .5rem;
+                }
+            }
+        }
+
+        img {
+            width: 28rem;
+            height: 28rem;
+        }
+    }
 }
