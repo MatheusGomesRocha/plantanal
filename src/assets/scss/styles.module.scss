@@ -30,8 +30,20 @@
             margin-left: auto;
 
             li {
+                color: var(--title);
                 font-weight: 600;
                 margin-left: 2.5rem; 
+
+                &:first-child {
+                    color: var(--first-color);
+
+                    &::after {
+                        content: '';
+                        width: 60%;
+                        border-bottom: 2px solid var(--first-color);
+                        display: block;
+                    }
+                }
             }
         }
     }
