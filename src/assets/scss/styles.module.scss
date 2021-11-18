@@ -52,7 +52,7 @@
         display: flex;
         align-items: center;
         width: 100%;
-        margin-top: 4rem;
+        margin-top: 3rem;
 
         .social {
             display: flex;
@@ -187,6 +187,95 @@
         img {
             width: 28rem;
             height: 28rem;
+        }
+    }
+
+    .products {
+        margin-top: 6rem;
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h2 {
+                text-align: center;
+                width: 70%;
+                font-size: 2rem;
+            }
+
+            p {
+                color: var(--text-light);
+                text-align: center;
+                width: 60%;
+                margin-top: 1rem;
+            }
+        }
+
+        .productsArea {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin-top: 1rem;
+            
+            .productItem {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-top: 2rem;
+
+                .topInfo {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    .backgroundBall {
+                        background-color: var(--first-color-lighter);
+                        position: absolute;
+                        width: 9rem;
+                        height: 9rem;
+                        border-radius: 4.5rem;
+                    }
+        
+                    img {
+                        z-index: 999;
+                        position: relative;
+                        left: 2rem;
+                        max-width: 14rem;
+                        max-height: 14rem;
+                    }
+    
+                    .productName {
+                        color: var(--title);
+                        font-weight: 600;
+                        font-size: 1.2rem;
+                        margin-top: 1rem;
+                    }
+                }
+
+                .bottomFooter {
+                    display: flex;
+                    align-items: center;
+
+                    .price {
+                        color: var(--first-color);
+                        font-weight: 600;
+                        font-size: 1.2rem;
+                    }
+
+                    .bagButton {
+                        background-color: var(--first-color);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 2rem;
+                        height: 2rem;
+                        border-radius: .2rem;
+                        margin-left: 3rem;
+                    }
+                }
+            }
         }
     }
 }

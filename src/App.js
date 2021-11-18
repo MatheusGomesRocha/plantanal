@@ -2,15 +2,31 @@ import React from 'react';
 import styles from './assets/scss/styles.module.scss';
 import './globals.scss';
 
+import product1Img from './assets/images/product1.png';
+import product2Img from './assets/images/product2.png';
+import product3Img from './assets/images/product3.png';
+import product4Img from './assets/images/product5.png';
+import product5Img from './assets/images/product5.png';
+import product6Img from './assets/images/product6.png';
+
 import favicon from './assets/images/favicon.png';
 import homeImg from './assets/images/home.png';
 import aboutImg from './assets/images/about.png';
 
-import { BsArrowRightShort } from 'react-icons/bs';
+import { BsArrowRightShort, BsHandbag } from 'react-icons/bs';
 import { AiOutlineInstagram } from 'react-icons/ai';
 import { TiSocialFacebook } from 'react-icons/ti';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { BiCheck } from 'react-icons/bi';
+
+let array = [
+  {id: 1, img: product1Img, name: 'Lorem Ipsum', price: 35},
+  {id: 2, img: product2Img, name: 'Lorem Ipsum', price: 35},
+  {id: 3, img: product3Img, name: 'Lorem Ipsum', price: 35},
+  {id: 4, img: product4Img, name: 'Lorem Ipsum', price: 35},
+  {id: 5, img: product5Img, name: 'Lorem Ipsum', price: 35},
+  {id: 6, img: product6Img, name: 'Lorem Ipsum', price: 35},
+];
 
 export default () => {
   return(
@@ -90,6 +106,35 @@ export default () => {
         </div>
 
         <img src={aboutImg} />
+      </section>
+
+      <section className={styles.products}>
+        <div className={styles.header}>
+          <h2>Tempor orci dapibus in iaculis</h2>
+          <p>Purus in mollis nunc sed id semper risus in hendrerit gravida rutrum quisque non tellus orci ac auctor augue mauris augue neque gravida</p>
+        </div>
+
+        <div className={styles.productsArea}>
+          {array.map((item, k) => (
+            <div className={styles.productItem} key={k}>
+              <div className={styles.topInfo}>
+                <div className={styles.backgroundBall}></div>
+
+                <img src={item.img}/>
+
+                <span className={styles.productName}>{item.name}</span>
+              </div>
+
+              <div className={styles.bottomFooter}>
+                <span className={styles.price}>R$ {item.price.toFixed(2)}</span>
+
+                <div className={styles.bagButton}>
+                  <BsHandbag color="#fff" size={18} />
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
     </div>
   )
