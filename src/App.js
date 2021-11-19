@@ -2,16 +2,21 @@ import React from 'react';
 import styles from './assets/scss/styles.module.scss';
 import './globals.scss';
 
-import product1Img from './assets/images/product1.png';
-import product2Img from './assets/images/product2.png';
-import product3Img from './assets/images/product3.png';
-import product4Img from './assets/images/product5.png';
-import product5Img from './assets/images/product5.png';
-import product6Img from './assets/images/product6.png';
+import Product1Img from './assets/images/product1.png';
+import Product2Img from './assets/images/product2.png';
+import Product3Img from './assets/images/product3.png';
+import Product4Img from './assets/images/product5.png';
+import Product5Img from './assets/images/product5.png';
+import Product6Img from './assets/images/product6.png';
 
-import favicon from './assets/images/favicon.png';
-import homeImg from './assets/images/home.png';
-import aboutImg from './assets/images/about.png';
+import Card1Img from './assets/images/card1.png';
+import Card2Img from './assets/images/card2.png';
+import Card3Img from './assets/images/card3.png';
+import Card4Img from './assets/images/card4.png';
+
+import Favicon from './assets/images/favicon.png';
+import HomeImg from './assets/images/home.png';
+import AboutImg from './assets/images/about.png';
 
 import { BsArrowRightShort, BsHandbag, BsTelephone } from 'react-icons/bs';
 import { AiOutlineInstagram, AiOutlinePlus, AiOutlineMail } from 'react-icons/ai';
@@ -20,12 +25,12 @@ import { FaLinkedinIn } from 'react-icons/fa';
 import { BiCheck } from 'react-icons/bi';
 
 let array = [
-  {id: 1, img: product1Img, name: 'Lorem Ipsum', price: 35},
-  {id: 2, img: product2Img, name: 'Lorem Ipsum', price: 35},
-  {id: 3, img: product3Img, name: 'Lorem Ipsum', price: 35},
-  {id: 4, img: product4Img, name: 'Lorem Ipsum', price: 35},
-  {id: 5, img: product5Img, name: 'Lorem Ipsum', price: 35},
-  {id: 6, img: product6Img, name: 'Lorem Ipsum', price: 35},
+  {id: 1, img: Product1Img, name: 'Lorem Ipsum', price: 35},
+  {id: 2, img: Product2Img, name: 'Lorem Ipsum', price: 35},
+  {id: 3, img: Product3Img, name: 'Lorem Ipsum', price: 35},
+  {id: 4, img: Product4Img, name: 'Lorem Ipsum', price: 35},
+  {id: 5, img: Product5Img, name: 'Lorem Ipsum', price: 35},
+  {id: 6, img: Product6Img, name: 'Lorem Ipsum', price: 35},
 ];
 
 export default () => {
@@ -33,8 +38,8 @@ export default () => {
     <div className={styles.container}>
       <nav>
         <div className={styles.logo}>
-          <img src={favicon} />
-          <span>Plantex</span>
+          <img src={Favicon} />
+          <span>Plantanal</span>
         </div>
 
         <ul>
@@ -59,7 +64,7 @@ export default () => {
           </div>
         </div>
 
-        <img src={homeImg} className={styles.homeImg} />
+        <img src={HomeImg} className={styles.homeImg} />
 
         <div className={styles.textArea}>
           <h1>Tempor orci dapibus in iaculis nunc sed truli</h1>
@@ -105,7 +110,7 @@ export default () => {
           </div>
         </div>
 
-        <img src={aboutImg} />
+        <img src={AboutImg} />
       </section>
 
       <section className={styles.products}>
@@ -275,6 +280,47 @@ export default () => {
           </div>
         </div>
       </section>
+
+      <section className={styles.footer}>
+          <div className={styles.moreInfo}>
+
+            <div className={styles.moreInfoItem}>
+              <div className={styles.logo}>
+                <img src={Favicon} />
+                <span>Plantanal</span>
+              </div>
+              <h2>Fringilla ut morbi tincidunt augue</h2>
+            </div>
+
+            <div className={styles.moreInfoItem}>
+              <span className={styles.title}>Our Address</span>
+
+              <div className={styles.address}>
+                <p>R. Lorem Ipsum - 66</p>
+                <p>São Paulo - SP</p>
+              </div>
+            </div>
+
+            <div className={styles.moreInfoItem}>
+              <span className={styles.title}>Credit card accepteds</span>
+
+              <div className={styles.creditCards}>
+                <img src={Card1Img} />
+                <img src={Card2Img} />
+                <img src={Card3Img} />
+                <img src={Card4Img} />
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.newsLetter}>
+            <input placeholder="Enter your email" />
+            <div className={styles.subscribeButton}>
+              <span>Subscribe</span>
+              <BsArrowRightShort size={25} color="#fff" />
+            </div>
+          </div>
+        </section>
     </div>
   )
 }
