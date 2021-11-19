@@ -137,6 +137,53 @@ export default () => {
           ))}
         </div>
       </section>
+
+      <section className={styles.steps}>
+        <div className={styles.innerDiv}>
+          <h2>Steps to starting planting</h2>
+
+          <div className={styles.inlineSteps}>
+            {/* STEP 1 ------------------------------------------------- */}
+
+            <div className={styles.step}>
+              <div className={styles.numberOfStepDiv}>
+                <span>01</span>
+              </div>
+
+              <h3>Lorem Ipsum</h3>
+
+              <p>habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper</p>
+            </div>
+
+            {/*  STEP 2 ------------------------------------------------- */}
+
+            <div className={styles.step}>
+              <div className={styles.numberOfStepDiv}>
+                <span>02</span>
+              </div>
+
+              <h3>Lorem Ipsum</h3>
+
+              <p>habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper</p>
+            </div>
+
+            {/* STEP 3 ------------------------------------------------- */}
+
+            <div className={styles.step}>
+              <div className={styles.numberOfStepDiv}>
+                <span>03</span>
+              </div>
+
+              <h3>Lorem Ipsum</h3>
+
+              <p>habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper</p>
+            </div>
+
+            {/* END OF STEPS ------------------------------------------------- */}
+            
+          </div>
+        </div>
+      </section>
     </div>
   )
 }
