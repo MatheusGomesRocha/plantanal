@@ -13,8 +13,8 @@ import favicon from './assets/images/favicon.png';
 import homeImg from './assets/images/home.png';
 import aboutImg from './assets/images/about.png';
 
-import { BsArrowRightShort, BsHandbag } from 'react-icons/bs';
-import { AiOutlineInstagram, AiOutlinePlus } from 'react-icons/ai';
+import { BsArrowRightShort, BsHandbag, BsTelephone } from 'react-icons/bs';
+import { AiOutlineInstagram, AiOutlinePlus, AiOutlineMail } from 'react-icons/ai';
 import { TiSocialFacebook } from 'react-icons/ti';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { BiCheck } from 'react-icons/bi';
@@ -232,6 +232,47 @@ export default () => {
           </div>
 
           {/** END OF FAQS */}
+        </div>
+      </section>
+
+      <section className={styles.contact}>
+        <div className={styles.header}>
+          <div className={styles.headerLeft}>
+            <h1>Faucibus purus in massa tempor nec feugiat</h1>
+
+            <div className={styles.contactInfo}>
+              <span>Fringilla ut morbi tincidunt</span>
+              <div className={styles.inlineContactInfo}>
+                <BsTelephone color="#000" size={20} />
+                <span>(00) 123456-7890</span>
+              </div>
+            </div>
+            
+            <div className={styles.contactInfo}>
+              <span>Fringilla ut morbi tincidunt</span>
+              <div className={styles.inlineContactInfo}>
+                <AiOutlineMail color="#000" size={20} />
+                <span>email@email.com</span>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.form}>
+            <div className={styles.inputDiv}>
+              <label>Name</label>
+              <input />
+            </div>
+
+            <div className={styles.inputDiv}>
+              <label>Subject</label>
+              <input />
+            </div>
+
+            <div className={styles.inputDiv}>
+              <label>Message</label>
+              <textarea />
+            </div>
+          </div>
         </div>
       </section>
     </div>
