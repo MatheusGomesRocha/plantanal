@@ -245,33 +245,42 @@
                         max-width: 14rem;
                         max-height: 14rem;
                     }
-    
-                    .productName {
-                        color: var(--title);
-                        font-weight: 600;
-                        font-size: 1.2rem;
-                        margin-top: 1rem;
-                    }
                 }
 
                 .bottomFooter {
                     display: flex;
                     align-items: center;
+                    justify-content: center;
+                    margin-top: 1rem;
 
-                    .price {
-                        color: var(--first-color);
-                        font-weight: 600;
-                        font-size: 1.2rem;
+                    .bottomFooterColumn {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+
+                        .productName {
+                            color: var(--title);
+                            font-weight: 600;
+                            font-size: 1.2rem;
+                        }
+
+                        .price {
+                            color: var(--first-color);
+                            font-weight: 600;
+                            font-size: 1.2rem;
+                        }
                     }
+
+                    
 
                     .bagButton {
                         background-color: var(--first-color);
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        width: 2rem;
-                        height: 2rem;
-                        border-radius: .2rem;
+                        width: 2.5rem;
+                        height: 2.5rem;
+                        border-radius: .4rem;
                         margin-left: 3rem;
                     }
                 }

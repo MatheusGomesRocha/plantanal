@@ -121,12 +121,13 @@ export default () => {
                 <div className={styles.backgroundBall}></div>
 
                 <img src={item.img}/>
-
-                <span className={styles.productName}>{item.name}</span>
               </div>
 
               <div className={styles.bottomFooter}>
+              <div className={styles.bottomFooterColumn}>
+                <span className={styles.productName}>{item.name}</span>
                 <span className={styles.price}>R$ {item.price.toFixed(2)}</span>
+              </div>
 
                 <div className={styles.bagButton}>
                   <BsHandbag color="#fff" size={18} />
