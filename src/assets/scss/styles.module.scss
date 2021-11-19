@@ -1,9 +1,11 @@
 .container {
-    padding: 3rem 5rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
 
     nav {
         display: flex;
         align-items: center;
+        padding: 0 3rem;
 
         .logo {
             display: flex;
@@ -53,6 +55,7 @@
         align-items: center;
         width: 100%;
         margin-top: 3rem;
+        padding: 0 3rem;
 
         .social {
             display: flex;
@@ -132,6 +135,7 @@
         align-items: center;
         justify-content: space-between;
         margin-top: 6rem;
+        padding: 0 3rem;
 
         .textArea {
             width: 50%;
@@ -192,6 +196,7 @@
 
     .products {
         margin-top: 6rem;
+        padding: 0 3rem;
 
         .header {
             display: flex;
@@ -287,8 +292,9 @@
     }
 
     .steps {
-        margin-top: 6rem;
         display: flex;
+        margin-top: 6rem;
+        padding: 0 3rem;
 
         .innerDiv {
             background-color: var(--first-color);
@@ -347,5 +353,40 @@
                 }
             }
         }
+    }
+
+    .faqs {
+        background-color: var(--first-color-lighter);
+        width: 100%;
+        margin-top: 6rem;
+        padding: 3rem;
+
+        h2 {
+            font-size: 2.5rem;
+            width: 60%;
+        }
+
+        .gridFaqs {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 2rem;
+            margin-top: 2rem;
+
+            .faq {
+                background-color: var(--container);
+                display: flex;
+                align-items: center;
+                height: 4.5rem;
+                border-radius: .5rem;
+                padding-left: 1rem;
+
+                span {
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                    margin-left: 1rem;
+                }
+            }
+        }
+
     }
 }

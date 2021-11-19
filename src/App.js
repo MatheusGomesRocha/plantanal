@@ -14,7 +14,7 @@ import homeImg from './assets/images/home.png';
 import aboutImg from './assets/images/about.png';
 
 import { BsArrowRightShort, BsHandbag } from 'react-icons/bs';
-import { AiOutlineInstagram } from 'react-icons/ai';
+import { AiOutlineInstagram, AiOutlinePlus } from 'react-icons/ai';
 import { TiSocialFacebook } from 'react-icons/ti';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { BiCheck } from 'react-icons/bi';
@@ -182,6 +182,56 @@ export default () => {
             {/* END OF STEPS ------------------------------------------------- */}
             
           </div>
+        </div>
+      </section>
+
+      <section className={styles.faqs}>
+        <h2>Faucibus purus in massa tempor nec feugiat</h2>
+
+        <div className={styles.gridFaqs}>
+          {/** QUESTION 1 */}
+
+          <div className={styles.faq}>
+            <AiOutlinePlus color="#000" size={20} />
+            <span>Volutpat lacus laoreet non?</span>
+          </div>
+
+          {/** QUESTION 2 */}
+
+          <div className={styles.faq}>
+            <AiOutlinePlus color="#000" size={20} />
+            <span>Volutpat lacus laoreet non?</span>
+          </div>
+
+          {/** QUESTION 3 */}
+
+          <div className={styles.faq}>
+            <AiOutlinePlus color="#000" size={20} />
+            <span>Volutpat lacus laoreet non?</span>
+          </div>
+
+          {/** QUESTION 4 */}
+
+          <div className={styles.faq}>
+            <AiOutlinePlus color="#000" size={20} />
+            <span>Volutpat lacus laoreet non?</span>
+          </div>
+
+          {/** QUESTION 5 */}
+
+          <div className={styles.faq}>
+            <AiOutlinePlus color="#000" size={20} />
+            <span>Volutpat lacus laoreet non?</span>
+          </div>
+
+          {/** QUESTION 6 */}
+
+          <div className={styles.faq}>
+            <AiOutlinePlus color="#000" size={20} />
+            <span>Volutpat lacus laoreet non?</span>
+          </div>
+
+          {/** END OF FAQS */}
         </div>
       </section>
     </div>
