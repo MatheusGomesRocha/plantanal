@@ -293,7 +293,6 @@
     .steps {
         display: flex;
         margin-top: 6rem;
-        padding: 0 3rem;
 
         .innerDiv {
             background-color: var(--first-color);
@@ -561,5 +560,29 @@
                 }
             }
         }
+    }
+}
+
+@media(min-width: 1450px) and (max-width: 1750px) {
+    .container {
+        padding: 3rem 13rem;
+    }
+}
+
+@media(min-width: 1751px) and (max-width: 2099px) {
+    .container {
+        padding: 3rem 23rem;
+    }
+}
+
+@media(min-width: 2100px) and (max-width: 2399px) {
+    .container {
+        padding: 3rem 25rem;
+    }
+}
+
+@media(min-width: 2400px) {
+    .container {
+        padding: 3rem 40rem;
     }
 }
